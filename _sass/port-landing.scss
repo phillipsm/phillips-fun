@@ -1,0 +1,115 @@
+.port-landing {
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 6em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+      "intro-text intro-text . ."
+      "perma-tile perma-tile algo-tile algo-tile"
+      "openbooth-tile openbooth-tile illustration-tile illustration-tile"
+      "about-desc about-desc about-img about-img"
+      "contact-desc contact-desc contact-desc .";
+    }
+
+    .intro-text {
+        grid-area: intro-text;
+    }
+
+    .work-text {
+          grid-area: work-text;
+    }
+    .perma-tile {
+        grid-area: perma-tile;
+    }
+
+    .algo-tile {
+        grid-area: algo-tile;
+    }
+
+    .openbooth-tile {
+        grid-area: openbooth-tile;
+    }
+
+    .illustration-tile {
+      grid-area: illustration-tile;
+    }
+
+    .about-desc {
+        grid-area: about-desc;
+    }
+
+    .about-img {
+      grid-area: about-img;
+    }
+
+    .contact-desc {
+        grid-area: contact-desc;
+    }
+
+
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-template-areas:
+            "about-img about-img"
+            "intro-text intro-text"
+            "work-text work-text"
+            "perma-tile perma-tile"
+            "algo-tile algo-tile"
+            "openbooth-tile openbooth-tile"
+            "illustration-tile illustration-tile"
+            "about-desc about-desc"
+            "contact-desc contact-desc";
+        }
+
+        .about-img {
+          margin-top: 8rem;
+        }
+
+        .intro-text {
+            margin-top: 2rem;
+        }
+
+        .section-title {
+          margin-top: 6rem;
+        }
+
+
+        .tile-title {
+          font-family: 'Walsheim Medium', sans-serif;
+          font-size: 1.1em;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+        }
+
+        .tile {
+          margin-top: 4rem;
+        }
+
+        .tile-desc {
+          margin-top: 2rem;
+          margin-bottom: 0;
+          font-size: 1em;
+          font-family: 'Walsheim Thin', sans-serif;
+        }
+
+    }
+
+}

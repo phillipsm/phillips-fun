@@ -1,0 +1,347 @@
+---
+layout: portfolio-case-study
+title: Perma.cc Case Study
+---
+<div class="perma">
+<div class="container">
+    <div class="overview-text">
+        <p class="body-text">Perma.cc</p>
+        <p>
+            In this case study we'll walk through the process used define the interface that displays web archives at Perma.cc.
+        </p>
+        <p>
+            This feature was implemented in 2017 in the Harvard Library Innovation Lab in Cambridge, MA.
+        </p>
+        <p>Create your own web archives at <a href="https://perma.cc">Perma.cc</a>.</p>
+    </div>
+
+    <div class="overview-img">
+        <img src="/assets/images/landing-img.png"
+            alt="Perma.cc logo"
+            srcset="/assets/images/landing-img@2x.png 2x">
+    </div>
+
+
+    <div class="context-head">
+        <p class="body-text">Context</p>
+    </div>
+
+    <div class="context-text">
+        <p>
+            Perma.cc is a web service that helps scholars, journals, courts, and others create permanent records of the web sources they cite.
+        </p>
+        <p>
+            Perma is used by more than half of the law schools in the US, has been used by a US President and the Supreme Court.
+        </p>
+        <p>
+            Perma's core service is simple - input a URL and receive an archive in return.
+        </p>
+        <p>
+            Your archive is stored at your library and is available forever. No more 404s or shifting content.
+        </p>
+        <p>
+            I led the Interaction Design effort on the feature described in this case study, and across Perma generally. I also functioned as a full stack developer by contirbuting Python and JavaScript.
+        </p>
+    </div>
+
+    <div class="context-img">
+        <img src="/assets/images/perma-phone.png"
+            alt="Perma.cc capture page illustrated in a phone display"
+            srcset="/assets/images/perma-phone@2x.png 2x">
+
+            <p>
+              Enter any URL and Perma.cc will generate a web archive for you
+            </p>
+    </div>
+
+    <div class="problem-head">
+        <p class="body-text">Problem</p>
+    </div>
+
+    <div class="problem-text">
+        <p>
+            Presenting an archive of a webpage can be confusing. The biggest concern centers around the URL in your browser's address bar. Under normal use, you'll see a Perma.cc URL in your address bar but the conent of the browsers will be from another site, say Wikipedia..
+        </p>
+        <p>
+            Keeping user confusion low is a signficiant challenge - we must clearly label the archive so the user knows they're viewing a backup and not the site of the original publisher.
+        </p>
+        <p>
+            We need to avoid user confusion and also avoid being a host for content that is normally stored behind a paywall. We don't want to steal views from creators while trying to keep content stable as the internet shifts below.
+        </p>
+    </div>
+
+    <div class="problem-img">
+
+            <img src="/assets/images/perma-problem.png"
+                alt="Perma.cc capture page illustrated in a phone display"
+                srcset="/assets/images/perma-problem@2x.png 2x">
+
+                <p>
+                  The web page Perma.cc shows you is a recreation of the original. An archive.
+                </p>
+    </div>
+
+
+    <div class="solution-head">
+        <p class="body-text">Solution</p>
+    </div>
+
+    <div class="solution-text">
+        <p>
+            Presenting an archive of a webpage generates a number of competing concerns.
+        </p>
+        <p>
+            The user that followed the link to the web archive wants to see the archived webpage - they're after the original content.
+        </p>
+        <p>
+            Perma needed to clearly let the user know that they were viewing an archive at perma.cc/some-guid even if the contents clearly originated elsewhere.
+            Perma could be used as tool to avoid paywalls and direct traffic to the original content provider.
+
+            The interface needed to offer a lot and still stay out of the users way.
+        </p>
+    </div>
+
+    <div class="solution-img">
+        <img src="/assets/images/perma-solution.png"
+            alt="Perma.cc capture page illustrated in a phone display"
+            srcset="/assets/images/perma-solution@2x.png 2x">
+
+            <p>
+              The end result of this design process and the interface currently in production.
+            </p>
+    </div>
+
+
+    <div class="process-head">
+        <p class="body-text">Process</p>
+    </div>
+
+    <div class="process-text">
+      <p>
+        This process will help us explore a broad range of paths forward - we're working hard to avoid local maximums.
+        </p>
+        <p>We'll end up with a bunch of bad ideas and hopefully, a couple of good ones. It's important to move quickly through these steps. </p>
+        <p>
+            We'll dig into each step below. The high level is about same process I use for most larger interaction design efforts.
+        </p>
+    </div>
+
+    <div class="process-overview-img">
+        <img src="/assets/images/process-overview-v2.png"
+            alt="Perma.cc logo"
+            srcset="/assets/images/process-overview-v2@2x.png 2x">
+            Avoid local maximums through wildness
+    </div>
+
+
+    <div class="process-one-text">
+        <p class="body-text">Step 1</p>
+        <p class="process-subtitle">
+            Generate wild ideas.
+            Good and bad.
+        </p>
+        <p>
+            Gather two to a few people around a table and set a timer for 3 minutes. Each person fills out as many wild ideas as possible on a stack of index cards.
+        </p>
+        <p>
+            Very little filter. Almost all bad ideas.
+        </p>
+        <p>
+            Works individually, but is more productive and fun with a group.
+        </p>
+        <p>
+            Output   stacks of cards
+        </p>
+    </div>
+
+    <div class="process-one-img">
+        <img src="/assets/images/process-card-discussion.jpg"
+            alt="Design process step 2 described as organized index cards on the wall"
+            srcset="/assets/images/process-card-discussion@2x.jpg 2x">
+
+            <p>
+                Exploring wild ideas for Perma.cc features with Harvard colleagues
+            </p>
+    </div>
+
+    <div class="process-two-text">
+        <p class="body-text">Step 2</p>
+        <p class="process-subtitle">
+            Connect wild ideas.
+            Push for new possibilities.
+        </p>
+        <p>
+            Synthesize and make legible
+            Organize the wiildness a little so that it’ll spark discussion
+
+            Repeat step one until it feels tired. Three or four rounds of tow or three cards per round is a good mark to hit.
+
+            Cull those ideas down to a handful. In the group, synthesize and flesh out.
+        </p>
+
+        <p>
+            Output   stacks of cards taped or pinned to a surface
+        </p>
+    </div>
+
+    <div class="process-two-img">
+            <img src="/assets/images/process-cards-synth.jpg"
+                alt="Design process step 2 described as organized index cards on the wall"
+                srcset="/assets/images/process-cards-synth@2x.jpg 2x">
+
+            <p>
+              Three features with a wide range of possibilities. Loads of paper taped on paper.
+            </p>
+    </div>
+
+
+    <div class="process-three-text">
+        <p class="body-text">Step 3</p>
+        <p class="process-subtitle">
+            Sketch low fidelity interfaces. Examine prior art.
+        </p>
+        <p>
+            Develop potential directions
+            Low and medium fidelity prototypes. Examine prior art.
+        </p>
+        <p>
+            Look at prior art after you've had original thought. Incorporate patterns and clear wins.
+        </p>
+        <p>
+            Make lo-fi sketches that can be tossed around internally. These should be pencil and paper or balsamiq wireframes that do nothing more than present the new interaction.
+        </p>
+        <p>
+            If an idea feels potentially promising, up the fidelity just a little bit with a balsamiq or  InVision
+        </p>
+        <p>
+            Output = stacks of paper loaded with lo-fi sketches
+        </p>
+    </div>
+
+    <div class="process-three-img-a">
+        <img src="/assets/images/perma-wireframe-sketch.jpg"
+            alt="Design process step 2 described as organized index cards on the wall"
+            srcset="/assets/images/perma-wireframe-sketch@2x.jpg 2x">
+            <p>
+              Many low fidelity sketches are wireframes are generated in step 2
+            </p>
+    </div>
+
+    <div class="process-three-img-b">
+            <img src="/assets/images/perma-wireframe-sketch-i.jpg"
+                alt="Design process step 2 described as organized index cards on the wall"
+                srcset="/assets/images/perma-wireframe-sketch-i@2x.jpg 2x">
+
+              <p>
+                These wireframes should be loose, quick and wild
+              </p>
+    </div>
+
+    <div class="process-four-img-a">
+        <img src="/assets/images/perma-interstitial-wf.png"
+            alt="Design process step 2 described as organized index cards on the wall"
+            srcset="/assets/images/perma-interstitial-wf@2x.png 2x">
+            <p>
+              Wireframe of interstitial page. An approach dropped at this step.
+            </p>
+    </div>
+
+    <div class="process-four-img-b">
+        <img src="/assets/images/perma-header-wf.png"
+            alt="Design process step 2 described as organized index cards on the wall"
+            srcset="/assets/images/perma-header-wf@2x.png 2x">
+            <p>
+              Wireframe illustrating the user of a thin header with archive details. The approach we implemented.
+            </p>
+    </div>
+
+    <div class="process-four-text">
+        <p class="body-text">Step 4</p>
+        <p class="process-subtitle">
+            Refine and focus.
+        </p>
+        <p>
+            Refine and focus
+            Canvas power users, coworkers, test partners and friends to play with sketches.
+
+            This step not only refines and stress tests potential directions, it gets the team on the same page. It clarifies. It provides focus on the best path forward.
+        </p>
+        <p>
+            Output   wireframes, user feedback, focused plan
+        </p>
+    </div>
+
+
+
+
+
+    <div class="process-five-text">
+        <p class="body-text">Step 5</p>
+        <p class="process-subtitle">
+            Prototype and build out
+        </p>
+        <p>
+            Prototype and test
+            Prototype and revisit the users from the previous step
+
+            Friendly users see an InVision style mockup. If that's touch, they see the feature branch that's been built out by the engineers.
+
+            Take lessons learn. Iterate on any deal breakers and roll out the feature. Build support docs and help the communications team get the word out.
+        </p>
+        <p>
+            Output   high fidelity wireframes, feature and user feedback documentation
+        </p>
+    </div>
+
+    <div class="process-four-img-b">
+        <img src="/assets/images/perma-header-wf.png"
+            alt="Design process step 2 described as organized index cards on the wall"
+            srcset="/assets/images/perma-header-wf@2x.png 2x">
+    </div>
+
+    <div class="process-five-img">
+      <video controls muted autoplay loop width="800px">
+
+          <source src="/assets/images/perma-proto.mp4"
+                  type="video/mp4">
+
+          Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+
+
+    <div class="post-process-head">
+        <p class="body-text">Finish</p>
+    </div>
+
+    <div class="post-process-text">
+        <p>
+            Stay connected as developers, UI designers and product teams begin to focus and deliver the new feature to the users.
+
+            Move onto the next challenge on Perm,a.cc - helping users organize archives across organizations
+        </p>
+    </div>
+
+    <div class="process-complete-img">
+      <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/m2Q7FEc0bEr4I" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p>Thumbs up. Thanks, giphy.</p>
+    </div>
+
+
+    <div class="role-head">
+        <p class="body-text">A team</p>
+    </div>
+
+    <div class="role-text">
+        <p>
+            I worked within a team of seven people on Perma.cc - one project manager, one UI designer, one communications person and three full stack developers.
+        </p>
+        <p>
+            Our team was led by the brilliant Harvard faculty member, Jonathan Zittrain. He initiated the effort, found funding and guided the vision for this web archiving service.
+        </p>
+        <p>
+            I wrote the text, drew the illustrations and took the photos that appear on this page. The source for this portfolio can be viewed on <a href="https://github.com/phillipsm/pgs-site">GitHub</a>.
+        </p>
+    </div>
+
+</div> <!-- / container -->
+</div>

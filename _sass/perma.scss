@@ -1,0 +1,204 @@
+.perma {
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 6em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas:
+      "overview-head overview-head overview-img overview-img overview-img"
+      "overview-text overview-text overview-img overview-img overview-img"
+      "context-head context-text context-text context-img context-img"
+      "problem-head problem-img problem-img problem-text problem-text"
+      "solution-head solution-text solution-text solution-text ."
+      ". solution-img solution-img solution-img solution-img"
+      "process-head process-text process-text process-overview-img process-overview-img"
+      ". process-one-text process-one-text process-one-text ."
+      ". process-one-img process-one-img process-one-img process-one-img "
+      ". process-two-text process-two-text process-two-img process-two-img"
+      ". process-three-text process-three-text process-three-text ."
+      ". process-three-img-a process-three-img-a process-three-img-b process-three-img-b"
+      ". process-four-text process-four-text process-four-text ."
+      ". process-four-img-a process-four-img-a process-four-img-b process-four-img-b"
+      ". process-five-text process-five-text process-five-text ."
+      ". process-five-img process-five-img process-five-img process-five-img"
+      "post-process-head post-process-text post-process-text process-complete-img process-complete-img"
+      "role-head role-text role-text role-text .";
+    }
+
+    .overview-head {
+        grid-area: overview-head;
+    }
+
+    .overview-text {
+        grid-area: overview-text;
+    }
+
+    .overview-img {
+        grid-area: overview-img;
+        justify-self: center;
+        //height: 100vh;
+    }
+
+    .context-head {
+        grid-area: context-head;
+    }
+
+    .context-text {
+        grid-area: context-text;
+    }
+
+    .context-img {
+        grid-area: context-img;
+        justify-self: center;
+    }
+
+    .problem-head {
+        grid-area: problem-head;
+    }
+
+    .problem-text {
+        grid-area: problem-text;
+    }
+
+    .problem-img {
+        grid-area: problem-img;
+        justify-self: center;
+        padding: 0 1rem;
+
+    }
+
+    .process-head {
+        grid-area: process-head;
+    }
+
+    .process-overview-img {
+        grid-area: process-overview-img;
+        jusify-self: center;
+    }
+
+    .solution-head {
+        grid-area: solution-head;
+    }
+
+    .solution-text {
+        grid-area: solution-text;
+    }
+
+    .solution-img {
+        grid-area: solution-img;
+        justify-self: center;
+        img {
+
+        }
+    }
+
+    .process-text {
+        grid-area: process-text;
+    }
+
+
+
+    .process-one-text {
+        grid-area: process-one-text;
+    }
+
+    .process-one-img {
+        grid-area: process-one-img;
+    }
+
+
+    .process-two-text {
+        grid-area: process-two-text;
+    }
+
+    .process-two-img {
+        grid-area: process-two-img;
+    }
+
+
+    .process-three-text {
+        grid-area: process-three-text;
+    }
+
+    .process-three-img-a {
+        grid-area: process-three-img-a;
+    }
+
+    .process-three-img-b {
+        grid-area: process-three-img-b;
+    }
+
+
+    .process-four-text {
+        grid-area: process-four-text;
+    }
+
+    .process-four-img-a {
+        grid-area: process-four-img-a;
+    }
+
+    .process-four-img-b {
+        grid-area: process-four-img-b;
+    }
+
+
+    .process-five-text {
+        grid-area: process-five-text;
+    }
+
+    .process-five-img {
+        grid-area: process-five-img;
+    }
+
+    .post-process-head {
+        grid-area: post-process-head;
+    }
+
+    .post-process-text {
+        grid-area: post-process-text;
+    }
+
+
+    .process-complete-img {
+      grid-area: process-complete-img;
+    }
+
+    .role-head {
+        grid-area: role-head;
+    }
+
+    .role-text {
+        grid-area: role-text;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+      border: .05rem solid #cccccc;
+    }
+
+    .process-subtitle {
+      font-size: 1em;
+      margin-top: -1em;
+      font-family: 'Walsheim Medium', sans-serif;
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-template-areas:
+            ". .";
+        }
+    }
+
+}

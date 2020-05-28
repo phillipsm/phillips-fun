@@ -1,0 +1,11 @@
+title: Matt Phillips' Portfolio
+description: The portfolio site of Matt Phillips
+logo: /assets/images/favicon-152.png
+url: https://phillips.fun
+lang: en-US
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
