@@ -183,7 +183,7 @@ a:visited {
   margin-right: .5rem;
 
   ul li {
-      padding-bottom: .5em;
+      padding: .3em;
   }
 }
 
@@ -196,6 +196,11 @@ a:visited {
 
   header {
     font-size: 1.2rem;
+
+    .main-nav {
+      font-size: 1.1em;
+    }
+
   }
 
 }
