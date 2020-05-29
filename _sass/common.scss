@@ -163,6 +163,30 @@ a:visited {
 
 
 
+
+
+.site-title {
+
+  a, a:link, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+  }
+
+  a:link {
+      border-bottom: none;
+  }
+  a:hover {
+      border-bottom: none;
+  }
+
+  a:visited {
+      border-bottom: none;
+  }
+
+}
+
+
+
+
 .site-title {
   grid-area: site-title;
   justify-self: left;
@@ -187,6 +211,20 @@ a:visited {
   }
 }
 
+.tile-title {
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.img-desc {
+  margin-top: 1em;
+  font-family: 'Walsheim Thin', sans-serif;
+  font-size: .8em;
+}
+
+
 
 @media only screen and (max-width: 900px) {
 
@@ -196,11 +234,20 @@ a:visited {
 
   header {
     font-size: 1.2rem;
+    margin-bottom: 8rem;
 
     .main-nav {
       font-size: 1.1em;
     }
 
+  }
+
+  .section-title {
+    margin-top: 6rem;
+  }
+
+  .img-desc {
+    text-align: center;
   }
 
 }

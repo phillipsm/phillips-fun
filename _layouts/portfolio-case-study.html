@@ -1,44 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" />
-    <link rel="icon" href="/assets/images/favicon-192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="/assets/images/favicon-180.png" />
-    <meta name="msapplication-TileImage" content="/assets/images/favicon-270.png" />
-
-    <meta name="robots" content="noindex">
+    {% include common-head.html %}
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     {% for item in page.local_page_js %}
         <script src="/assets/js/{{ item }}"></script>
     {% endfor %}
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110979652-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-110979652-1');
-    </script>
   </head>
   <body>
-    <header class="header">
-      <div class="site-title">
-        Matt Phillips
-      </div>
-        <nav class="main">
-            <ul>
-              <li><a href="/#work">Work</a></li>
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include common-header.html %}
     {{ content }}
   </body>
 </html>

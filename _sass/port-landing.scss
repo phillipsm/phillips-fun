@@ -9,11 +9,7 @@
       margin: 0 auto;
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
-      "intro-text intro-text . ."
-      "perma-tile perma-tile algo-tile algo-tile"
-      "openbooth-tile openbooth-tile illustration-tile illustration-tile"
-      "about-desc about-desc about-img about-img"
-      "contact-desc contact-desc contact-desc .";
+      ". .";
     }
 
     .intro-text {
@@ -79,25 +75,10 @@
             "contact-desc contact-desc";
         }
 
-        .about-img {
-          margin-top: 8rem;
-        }
-
         .intro-text {
             margin-top: 2rem;
         }
 
-        .section-title {
-          margin-top: 6rem;
-        }
-
-
-        .tile-title {
-          font-family: 'Walsheim Medium', sans-serif;
-          font-size: 1.1em;
-          margin-bottom: 2rem;
-          margin-top: 2rem;
-        }
 
         .tile {
           margin-top: 4rem;

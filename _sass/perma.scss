@@ -175,19 +175,33 @@
         grid-area: role-text;
     }
 
-    img {
-        width: 100%;
-        height: auto;
-    }
 
     video {
       border: .05rem solid #cccccc;
+      width: 100%;
+      height: auto;
     }
 
     .process-subtitle {
       font-size: 1em;
       margin-top: -1em;
       font-family: 'Walsheim Medium', sans-serif;
+    }
+
+    .iframe-container {
+      overflow: hidden;
+      padding: 0;
+      padding-top: 75%;
+      position: relative;
+    }
+
+    .iframe-container iframe {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
     }
 
     @media only screen and (max-width: 900px) {
@@ -197,7 +211,46 @@
             grid-column-gap: 1em;
             grid-row-gap: 1em;
             grid-template-areas:
-            ". .";
+            "overview-img overview-img"
+            "overview-head overview-head"
+            "overview-text overview-text"
+            "context-head context-head"
+            "context-text context-text"
+            "context-img context-img"
+            "problem-head problem-head"
+            "problem-text problem-text"
+            "problem-img problem-img"
+            "solution-head solution-head"
+            "solution-text solution-text"
+            "solution-img solution-img"
+            "process-head process-head"
+            "process-text process-text"
+            "process-overview-img process-overview-img"
+            "process-one-text process-one-text"
+            "process-one-img process-one-img"
+            "process-two-text process-two-text"
+            "process-two-img process-two-img"
+            "process-three-text process-three-text"
+            "process-three-img-a process-three-img-a"
+            "process-three-img-b process-three-img-b"
+            "process-four-text process-four-text"
+            "process-four-img-a process-four-img-a"
+            "process-four-img-b process-four-img-b"
+            "process-five-text process-five-text"
+            "process-five-img process-five-img"
+            "post-process-head post-process-head"
+            "post-process-text post-process-text"
+            "process-complete-img process-complete-img"
+            "role-head role-head"
+            "role-text role-text";
+        }
+
+        .overview-img {
+          margin-bottom: -2rem;
+        }
+
+        .title {
+          margin-bottom: 0;
         }
     }
 
