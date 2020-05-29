@@ -47,6 +47,10 @@
         grid-area: contact-desc;
     }
 
+    .closing-img {
+        grid-area: closing-img;
+    }
+
 
     .title {
         margin-bottom: 2rem;
@@ -72,7 +76,8 @@
             "openbooth-tile openbooth-tile"
             "illustration-tile illustration-tile"
             "about-desc about-desc"
-            "contact-desc contact-desc";
+            "contact-desc contact-desc"
+            "closing-img closing-img";
         }
 
         .intro-text {

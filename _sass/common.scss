@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "Walsheim Light";
+  src: url("/assets/fonts/GT-Walsheim-Light.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Light.woff") format("woff");
+}
+
+@font-face {
   font-family: "Walsheim Regular";
   src: url("/assets/fonts/GT-Walsheim-Regular.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Regular.woff") format("woff");
 }
@@ -127,9 +132,9 @@ body {
     color: $text_color;
 }
 
-header {
+.nav-container {
   max-width: 1100px;
-  font-family: 'Walsheim Thin', sans-serif;
+  font-family: 'Walsheim Light', sans-serif;
   display: grid;
   grid-column-gap: 2em;
   grid-row-gap: 6em;
@@ -221,10 +226,8 @@ a:visited {
 .img-desc {
   margin-top: 1em;
   font-family: 'Walsheim Thin', sans-serif;
-  font-size: .8em;
+  font-size: .85em;
 }
-
-
 
 @media only screen and (max-width: 900px) {
 
@@ -232,15 +235,20 @@ a:visited {
     font-size: 1.7rem;
   }
 
-  header {
+  .nav-container {
+    margin-bottom: 2rem;
+    margin-top: 8rem;
     font-size: 1.2rem;
-    margin-bottom: 8rem;
 
     .main-nav {
       font-size: 1.1em;
     }
-
   }
+
+.nav-container:first-of-type {
+  margin-top: 0;
+  margin-bottom: 10rem;
+}
 
   .section-title {
     margin-top: 6rem;

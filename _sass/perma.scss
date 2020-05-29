@@ -177,7 +177,7 @@
 
 
     video {
-      border: .05rem solid #cccccc;
+      border: .08rem solid #cccccc;
       width: 100%;
       height: auto;
     }
@@ -251,6 +251,17 @@
 
         .title {
           margin-bottom: 0;
+        }
+
+        .explore-more-container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 1em;
+          grid-row-gap: 1em;
+          grid-template-areas:
+          "perma-tile perma-tile"
+          "algo-tile algo-tile"
+          "openbooth-tile openbooth-tile"
+          "illustration-tile illustration-tile";
         }
     }
 

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body class="port-landing">
-
+    <header>
     {% include common-header.html %}
+    </header>
 
     <div class="container">
         <div class="about-img">
@@ -25,7 +26,7 @@
 
         <div id="work" class="work-text">
           <p class="title section-title">Work</p>
-          <p>Listed here, you'll find examples of work I've produced - a mix of sketches, wireframes, user research, visual assets, code and prototypes.</p>
+          <p>Listed here, you'll find examples of work I've produced - a broad selection of sketches, wireframes, user research, visual assets, code and prototypes.</p>
         </div>
         <div class="perma-tile tile">
 
@@ -35,8 +36,8 @@
                 srcset="/assets/images/perma-case-study-tile@2x.png 2x">
           </a>
           <p class="tile-title"><a href="/perma">Perma Case Study</a></p>
-            <p>A case study that walks through the process used to define interactions in this Harvard University web archiving service.</p>
-            <p class="tile-desc">Product Designer. Interaction Designer.</p>
+            <p>A case study that walks through the process used to define interfaces in this Harvard University web archiving service.</p>
+            <p class="tile-desc">Interaction Designer. Full Stack Developer. Product Designer.</p>
         </div>
 
         <div class="algo-tile tile">
@@ -51,8 +52,8 @@
 
         <div class="openbooth-tile tile">
             <img src="/assets/images/single-booth-with-solid-bg.jpg"
-                alt="Perma.cc logo"
-                srcset="/assets/images/single-booth-with-solid-bg@2x.jpg 2x">
+              alt="Perma.cc logo"
+              srcset="/assets/images/single-booth-with-solid-bg@2x.jpg 2x">
             <p class="tile-title">OpenBooth Case Study</p>
             <p>A journey through the process used to define the form and features of this occupiable furniture product.</p>
             <p class="tile-desc">Product Designer. Industrial Designer.</p>
@@ -70,7 +71,7 @@
 
         <div id ="about" class="about-desc">
           <p class="title section-title">About</p>
-          <p>I'm excited to explore new ways of thinking and doing at the intersection of human factors and technology - to setup outposts in recently charted lands.</p>
+          <p>I'm excited to explore new ways of thinking and doing at the intersection of human factors and technology - I hope to setup outposts in recently charted lands.</p>
           <p>I currently work independetly through <a href="https://publicgood.studio/" target="_blank">Public Good Studio</a>, and spent much of the last decade in the <a href="https://lil.law.harvard.edu/" target="_blank">Harvard Library Innovation Lab</a>.</p>
           <p>I hold a B.S. in Computer Science from Mansfield University of Pennsylvania and a M.S. in Computer Science from Virginia Tech.</p>
           <p>Bicycles, computers, horseplay, style and libraries consume most of my thoughts.</p>
@@ -87,12 +88,18 @@
             </p>
         </div>
 
+        <div class="closing-img">
+            <img src="/assets/images/up-up-up.jpg"
+              alt="Perma.cc logo"
+              srcset="/assets/images/up-up-up@2x.jpg 2x">
+        </div>
+
     </div>
+    {% include common-header.html %}
     <script src="/assets/js/vendor/smooth-scroll.polyfills.min.js"></script>
 
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-
   </body>
 </html>
