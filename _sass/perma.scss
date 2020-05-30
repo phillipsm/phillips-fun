@@ -67,7 +67,6 @@
     .problem-img {
         grid-area: problem-img;
         justify-self: center;
-        padding: 0 1rem;
 
     }
 
@@ -270,7 +269,6 @@
           grid-column-gap: 1em;
           grid-row-gap: 1em;
           grid-template-areas:
-          "perma-tile perma-tile"
           "algo-tile algo-tile"
           "openbooth-tile openbooth-tile"
           "illustration-tile illustration-tile";

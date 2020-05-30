@@ -229,6 +229,17 @@ a:visited {
   font-size: .85em;
 }
 
+.tile {
+  margin-top: 4rem;
+}
+
+.tile-desc {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-family: 'Walsheim Thin', sans-serif;
+}
+
 @media only screen and (max-width: 900px) {
 
   body {
@@ -258,4 +269,9 @@ a:visited {
     text-align: center;
   }
 
+  .explore-more-container {
+    .title-container {
+      margin-bottom: 2rem;
+    }
+  }
 }

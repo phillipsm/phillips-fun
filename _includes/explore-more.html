@@ -1,7 +1,9 @@
-<div class="explore-more-container"
-  <div class="role-head">
+<div class="explore-more-container">
+  <div class="title-container">
       <p class="title section-title">Explore more</p>
   </div>
+
+  {% if page.url != '/perma.html' %}
   <div class="perma-tile tile">
 
     <a href="/perma">
@@ -13,7 +15,9 @@
       <p>A case study that walks through the process used to define interactions in this Harvard University web archiving service.</p>
       <p class="tile-desc">Interaction Designer. Full Stack Developer. Product Designer.</p>
   </div>
+  {% endif %}
 
+  {% if page.url != '/algo-art.html' %}
   <div class="algo-tile tile">
       <img src="/assets/images/algo-art-tile.png"
           alt="Screen capture of many thin, small lines layered on top of one another"
@@ -23,7 +27,9 @@
       <p>A focused look at the technical details required to display dynamic visualzations across devices.</p>
       <p class="tile-desc">JavaScript Developer.</p>
   </div>
+  {% endif %}
 
+  {% if page.url != '/openbooth.html' %}
   <div class="openbooth-tile tile">
       <img src="/assets/images/single-booth-with-solid-bg.jpg"
           alt="Perma.cc logo"
@@ -32,7 +38,9 @@
       <p>A journey through the process used to define the form and features of this occupiable furniture product.</p>
       <p class="tile-desc">Product Designer. Industrial Designer.</p>
   </div>
+  {% endif %}
 
+  {% if page.url != '/illustrations.html' %}
   <div class="illustration-tile tile">
       <img src="/assets/images/ill-tile.png"
           alt="Perma.cc logo"
@@ -41,4 +49,5 @@
       <p>A ragtag gallery of illustrations and graphics from recent projects.</p>
       <p class="tile-desc">Illustrator. Graphic designer.</p>
   </div>
+  {% endif %}
 </div>
