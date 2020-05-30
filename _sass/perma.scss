@@ -182,10 +182,22 @@
       height: auto;
     }
 
+
+    .process-title {
+      margin-top: 4rem;
+      font-family: 'Walsheim Medium', sans-serif;
+      font-size: 1.2em;
+    }
     .process-subtitle {
-      font-size: 1em;
+      font-size: .8em;
       margin-top: -1em;
       font-family: 'Walsheim Medium', sans-serif;
+    }
+
+    .process-output {
+      font-size: .8em;
+      font-family: 'Walsheim Medium', sans-serif;
+      margin-bottom: 4rem;
     }
 
     .iframe-container {
