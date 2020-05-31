@@ -1,5 +1,3 @@
-// our base PGS colors
-
 @font-face {
   font-family: "Walsheim Thin";
   src: url("/assets/fonts/GT-Walsheim-Thin.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Thin.woff") format("woff");
@@ -43,7 +41,7 @@ html {
 body {
   background-color: #fff;
   color: $text_color;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-family: 'Walsheim Regular', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -51,40 +49,50 @@ body {
   margin: 3rem;
 }
 
+
 a, a:link, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
 }
 
 a:link {
-    border-bottom: .02em solid $cherry;
-    color: $text_color;
-
+    border-bottom: none;
 }
 a:hover {
-    color: #444;
-    border-bottom: .1em solid $cherry;
+    border-bottom: none;
 }
 
 a:visited {
-    border-bottom: .02em solid $cherry;
-    color: $text_color;
+    border-bottom: none;
+}
+
+p {
+  a, a:link, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+  }
+
+  a:link {
+      border-bottom: .02em solid $cherry;
+      color: $text_color;
+
+  }
+  a:hover {
+      color: #444;
+      border-bottom: .1em solid $cherry;
+  }
+
+  a:visited {
+      border-bottom: .02em solid $cherry;
+      color: $text_color;
+  }
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul p {
-    margin-bottom: .5em;
 }
 
 .body-text {
@@ -127,11 +135,7 @@ canvas {
 
 
 
-body {
-    font-size: 1.6rem;
-    color: $text_color;
-}
-
+// Nav container include
 .nav-container {
   max-width: 1100px;
   font-family: 'Walsheim Light', sans-serif;
@@ -139,70 +143,16 @@ body {
   grid-column-gap: 2em;
   grid-row-gap: 6em;
   background-color: #fff;
-  margin: 2rem auto;
+  margin: 10rem auto 2rem auto;
+
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
   "site-title site-title site-title main-nav";
 }
 
-
-
-a, a:link, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
-}
-
-a:link {
-    border-bottom: .02em solid $cherry;
-    color: $text_color;
-
-}
-a:hover {
-    color: #444;
-    border-bottom: .1em solid $cherry;
-}
-
-a:visited {
-    border-bottom: .02em solid $cherry;
-    color: $text_color;
-}
-
-
-
-
-
-.site-title {
-
-  a, a:link, a:hover, a:active, a:visited, a:focus {
-      text-decoration:none;
-  }
-
-  a:link {
-      border-bottom: none;
-  }
-  a:hover {
-      border-bottom: none;
-  }
-
-  a:visited {
-      border-bottom: none;
-  }
-
-}
-
-
-
-
-.site-title {
-  grid-area: site-title;
-  justify-self: left;
-  align-self: center;
-  font-family: 'Walsheim Medium', sans-serif;
-  font-size:2.8em;
-}
-
-.title {
-  font-family: 'Walsheim Medium', sans-serif;
-  font-size:1.8em;
+.nav-container:first-of-type {
+  margin-top: 0;
+  margin-bottom: 10rem;
 }
 
 .main-nav {
@@ -213,12 +163,40 @@ a:visited {
 
   ul li {
       padding: .3em;
+
+      p {
+        margin: 0;
+      }
   }
+}
+
+.site-title {
+  grid-area: site-title;
+  justify-self: left;
+  align-self: center;
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size: 2.8em;
+  margin: 0;
+
+  a, a:link, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+      color: $text_color;
+  }
+
+}
+// /Nav container include
+
+
+
+
+.title {
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size:2.2em;
 }
 
 .tile-title {
   font-family: 'Walsheim Medium', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.4em;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -227,6 +205,7 @@ a:visited {
   margin-top: 1em;
   font-family: 'Walsheim Thin', sans-serif;
   font-size: .85em;
+  text-align: center;
 }
 
 .tile {
@@ -240,6 +219,46 @@ a:visited {
   font-family: 'Walsheim Thin', sans-serif;
 }
 
+.project-title {
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size:2.4em;
+  margin: 2rem 0 2rem 0;
+}
+
+
+// Common Explore more grid items
+
+.title-container {
+  grid-area: title-container;
+}
+
+.perma-tile {
+    grid-area: perma-tile;
+}
+
+.algo-tile {
+    grid-area: algo-tile;
+}
+
+.openbooth-tile {
+    grid-area: openbooth-tile;
+}
+
+.illustration-tile {
+  grid-area: illustration-tile;
+}
+// /Explore more
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 900px) {
 
   body {
@@ -247,24 +266,29 @@ a:visited {
   }
 
   .nav-container {
-    margin-bottom: 2rem;
-    margin-top: 8rem;
     font-size: 1.2rem;
 
     .main-nav {
-      font-size: 1.1em;
+      font-size: 1.0em;
     }
   }
 
-.nav-container:first-of-type {
-  margin-top: 0;
-  margin-bottom: 10rem;
-}
-
-  .section-title {
-    margin-top: 6rem;
+  .nav-container:first-of-type {
+    margin-top: -1rem;
+    margin-bottom: 8rem;
   }
 
+  .project-title {
+    font-size: 1.8em;
+  }
+
+  .section-title {
+    margin-top: 4rem;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
   .img-desc {
     text-align: center;
   }

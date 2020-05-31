@@ -9,8 +9,8 @@
       margin: 0 auto;
       grid-template-columns: repeat(5, 1fr);
       grid-template-areas:
-      "overview-head overview-head overview-img overview-img overview-img"
-      "overview-text overview-text overview-img overview-img overview-img"
+      "overview-img overview-img overview-img overview-img overview-img"
+      "overview-text overview-text overview-text . ."
       "context-head context-text context-text context-img context-img"
       "problem-head problem-img problem-img problem-text problem-text"
       "solution-head solution-text solution-text solution-text ."
@@ -35,6 +35,7 @@
 
     .overview-text {
         grid-area: overview-text;
+        margin-top: -8rem;
     }
 
     .overview-img {
@@ -90,16 +91,11 @@
     .solution-img {
         grid-area: solution-img;
         justify-self: center;
-        img {
-
-        }
     }
 
     .process-text {
         grid-area: process-text;
     }
-
-
 
     .process-one-text {
         grid-area: process-one-text;
@@ -183,10 +179,11 @@
 
 
     .process-title {
-      margin-top: 4rem;
       font-family: 'Walsheim Medium', sans-serif;
-      font-size: 1.2em;
+      font-size: 1.4em;
+      margin-top: -2rem;
     }
+
     .process-subtitle {
       font-size: .8em;
       margin-top: -1em;
@@ -197,6 +194,10 @@
       font-size: .8em;
       font-family: 'Walsheim Medium', sans-serif;
       margin-bottom: 4rem;
+    }
+
+    .close-prox {
+          margin-top: -6rem;
     }
 
     .iframe-container {
@@ -257,22 +258,75 @@
         }
 
         .overview-img {
-          margin-bottom: -2rem;
+          margin-bottom: 4rem;
         }
 
         .title {
           margin-bottom: 0;
         }
 
-        .explore-more-container {
-          grid-template-columns: repeat(2, 1fr);
-          grid-column-gap: 1em;
-          grid-row-gap: 1em;
-          grid-template-areas:
-          "algo-tile algo-tile"
-          "openbooth-tile openbooth-tile"
-          "illustration-tile illustration-tile";
+        .tile {
+          margin-top: 3rem;
+        }
+        
+        .close-prox {
+          margin-top: 0;
+        }
+
+        .process-title {
+          margin-top: 4rem;
+          font-size: 1.2em;
         }
     }
+
+} // end scope wrapper
+
+
+
+
+
+
+.explore-more-container {
+    max-width: 1100px;
+    display: grid;
+    margin: 8rem auto 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+
+    grid-template-areas:
+    "title-container title-container"
+    "algo-tile openbooth-tile"
+    "illustration-tile .";
+
+    .tile, .title, .title-container {
+      margin: 0;
+    }
+
+    .tile {
+      margin-top: 3rem;
+    }
+
+    .section-title {
+      margin-bottom: -3rem;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .explore-more-container {
+    max-width: 1100px;
+    display: grid;
+    margin: 6rem auto 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+    "title-container"
+    "algo-tile"
+    "openbooth-tile"
+    "illustration-tile";
+  }
 
 }

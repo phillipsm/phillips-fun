@@ -3,36 +3,32 @@
     .container {
       max-width: 1100px;
       display: grid;
-      grid-column-gap: 2em;
-      grid-row-gap: 6em;
+      grid-column-gap: 4rem;
+      grid-row-gap: 8rem;
       background-color: #fff;
       margin: 0 auto;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-      ". .";
+      "intro-text about-img"
+      "work-text ."
+      "perma-tile algo-tile"
+      "openbooth-tile illustration-tile"
+      "about-desc about-desc"
+      "contact-desc contact-desc";
     }
 
     .intro-text {
         grid-area: intro-text;
+        align-self: end;
+
+        p {
+          margin-bottom: 0;
+          margin-top: 2em;
+        }
     }
 
     .work-text {
           grid-area: work-text;
-    }
-    .perma-tile {
-        grid-area: perma-tile;
-    }
-
-    .algo-tile {
-        grid-area: algo-tile;
-    }
-
-    .openbooth-tile {
-        grid-area: openbooth-tile;
-    }
-
-    .illustration-tile {
-      grid-area: illustration-tile;
     }
 
     .about-desc {
@@ -51,9 +47,8 @@
         margin-bottom: 2rem;
     }
 
-    img {
-        width: 100%;
-        height: auto;
+    .tile {
+      margin-top: 0;
     }
 
     @media only screen and (max-width: 900px) {
@@ -78,7 +73,9 @@
             margin-top: 2rem;
         }
 
-
+        .perma-tile {
+          margin-top: 2rem;
+        }
 
     }
 
