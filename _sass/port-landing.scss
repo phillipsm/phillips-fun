@@ -7,19 +7,20 @@
       grid-row-gap: 8rem;
       background-color: #fff;
       margin: 0 auto;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
-      "intro-text about-img"
-      "work-text ."
-      "perma-tile algo-tile"
-      "openbooth-tile illustration-tile"
-      "about-desc about-desc"
-      "contact-desc contact-desc";
+      "intro-text intro-text about-img about-img"
+      "work-text work-text work-text ."
+      "perma-tile perma-tile algo-tile algo-tile"
+      "openbooth-tile openbooth-tile illustration-tile illustration-tile"
+      "about-desc about-desc about-desc ."
+      "contact-desc contact-desc . .";
     }
 
     .intro-text {
         grid-area: intro-text;
         align-self: end;
+        margin-top: 8rem;
 
         p {
           margin-bottom: 0;
@@ -37,6 +38,7 @@
 
     .about-img {
       grid-area: about-img;
+      align-self: end;
     }
 
     .contact-desc {
@@ -51,6 +53,9 @@
       margin-top: 0;
     }
 
+    .section-start {
+      margin-top: 10rem;
+    }
     @media only screen and (max-width: 900px) {
 
         .container {

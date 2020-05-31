@@ -22,7 +22,7 @@ $purple_balloon: #ff66cc;
 $scum_green: #b6e2e9;
 $chemical_yellow: #fcf3b0;
 
-$text_color: #333;
+$text_color: #2d2b26;
 
 
 $cherry: #ee2348;
@@ -46,7 +46,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 3rem;
+  margin: 4rem;
 }
 
 
@@ -152,17 +152,17 @@ canvas {
 
 .nav-container:first-of-type {
   margin-top: 0;
-  margin-bottom: 10rem;
+  margin-bottom: 18rem;
 }
 
 .main-nav {
   grid-area: main-nav;
-  justify-self: right;
+  justify-self: left;
   align-self: center;
   margin-right: .5rem;
 
   ul li {
-      padding: .3em;
+      padding: .2em;
 
       p {
         margin: 0;
@@ -172,7 +172,7 @@ canvas {
 
 .site-title {
   grid-area: site-title;
-  justify-self: left;
+  justify-self: right;
   align-self: center;
   font-family: 'Walsheim Medium', sans-serif;
   font-size: 2.8em;
@@ -270,6 +270,10 @@ canvas {
 
     .main-nav {
       font-size: 1.0em;
+
+      p {
+        margin: .15em;
+      }
     }
   }
 
