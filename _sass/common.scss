@@ -249,7 +249,9 @@ canvas {
 }
 // /Explore more
 
-
+.mobile-break {
+    display: none;
+}
 
 
 
@@ -302,4 +304,9 @@ canvas {
       margin-bottom: 2rem;
     }
   }
+
+  .mobile-break {
+    display: block;
+  }
+
 }
