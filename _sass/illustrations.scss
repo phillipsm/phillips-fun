@@ -9,7 +9,10 @@
       margin: 0 auto;
       grid-template-columns: repeat(5, 1fr);
       grid-template-areas:
-      ". . . . .";
+      "overview-img overview-img overview-img overview-img overview-img"
+      "overview-text overview-text overview-text . ."
+      "garbagio garbagio garbagio climbing climbing"
+      ". ktr ktr double-digit double-digit-partner";
     }
 
     .overview-img {
@@ -20,6 +23,29 @@
         grid-area: overview-text;
     }
 
+    .ktr {
+      grid-area: ktr;
+      align-self: end;
+    }
+
+    .garbagio {
+      grid-area: garbagio;
+    }
+
+    .climbing {
+      grid-area: climbing;
+      justify-self: middle;
+      align-self: end;
+    }
+
+    .double-digit {
+      grid-area: double-digit;
+    }
+
+    .double-digit-partner {
+      grid-area: double-digit-partner;
+    }
+
     @media only screen and (max-width: 900px) {
 
         .container {
@@ -28,16 +54,24 @@
             grid-row-gap: 1em;
             grid-template-areas:
             "overview-img overview-img"
-            "overview-text overview-text";
+            "overview-text overview-text"
+            "ktr ktr"
+            "garbagio garbagio"
+            "double-digit double-digit-partner";
+
         }
 
         .overview-img {
           margin-bottom: -2rem;
-          border: 2px solid #ddd;
         }
 
         .title {
           margin-bottom: 0;
+        }
+
+        .framed {
+          border: 2px solid #ddd;
+          margin: 0;
         }
 
         .explore-more-container {
