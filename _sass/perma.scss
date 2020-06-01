@@ -160,6 +160,7 @@
 
     .process-complete-img {
       grid-area: process-complete-img;
+      justify-self: center;
     }
 
     .role-head {
@@ -268,7 +269,7 @@
         .tile {
           margin-top: 3rem;
         }
-        
+
         .close-prox {
           margin-top: 0;
         }
