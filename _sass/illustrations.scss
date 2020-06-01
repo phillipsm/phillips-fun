@@ -12,7 +12,7 @@
       "overview-img overview-img overview-img overview-img overview-img"
       "overview-text overview-text overview-text . ."
       "garbagio garbagio garbagio climbing climbing"
-      ". ktr ktr double-digit double-digit-partner";
+      "ktr ktr ktr double-digit double-digit-partner";
     }
 
     .overview-img {
@@ -21,11 +21,13 @@
 
     .overview-text {
         grid-area: overview-text;
+        margin-top: -8rem;
     }
 
     .ktr {
       grid-area: ktr;
       align-self: end;
+      justify-self: center;
     }
 
     .garbagio {
@@ -55,6 +57,7 @@
             grid-template-areas:
             "overview-img overview-img"
             "overview-text overview-text"
+            "climbing climbing"
             "ktr ktr"
             "garbagio garbagio"
             "double-digit double-digit-partner";
@@ -62,7 +65,11 @@
         }
 
         .overview-img {
-          margin-bottom: -2rem;
+          margin-bottom: 6rem;
+        }
+
+        .overview-text {
+          margin-bottom: 6rem;
         }
 
         .title {
@@ -73,17 +80,76 @@
           border: 2px solid #ddd;
           margin: 0;
         }
+    }
 
-        .explore-more-container {
-          grid-template-columns: repeat(2, 1fr);
-          grid-column-gap: 1em;
-          grid-row-gap: 1em;
-          grid-template-areas:
-          "perma-tile perma-tile"
-          "algo-tile algo-tile"
-          "openbooth-tile openbooth-tile"
-          "illustration-tile illustration-tile";
+
+
+
+
+
+
+
+
+
+
+    .explore-more-container {
+        max-width: 1100px;
+        display: grid;
+        margin: 8rem auto 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+
+        grid-template-areas:
+        "title-container title-container"
+        "perma-tile algo-tile"
+        "openbooth-tile .";
+
+        .tile, .title, .title-container {
+          margin: 0;
+        }
+
+        .tile {
+          margin-top: 3rem;
+        }
+
+        .section-title {
+          margin-bottom: -3rem;
         }
     }
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) {
+
+      .explore-more-container {
+        max-width: 1100px;
+        display: grid;
+        margin: 6rem auto 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-areas:
+        "title-container"
+        "perma-tile"
+        "algo-tile"
+        "openbooth-tile";
+      }
+
+    }
+
+
+
+
+
+
+
+
 
 }

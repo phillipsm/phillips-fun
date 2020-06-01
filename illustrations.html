@@ -6,13 +6,22 @@ title: '| Illustrations'
 <div class="container">
 
   <div class="overview-img">
-      <img src="/assets/images/illustrations/ill-hero.png"
+    <picture>
+        <source  media="(min-width: 700px)"
+          src="/assets/images/ill-tile.png"
           alt="Illustration of a wall mounted light fixture"
-          srcset="/assets/images/illustrations/ill-hero@2x.png 2x">
+          srcset="/assets/images/ill-tile@2x.png 2x">
+
+        <img
+            src="/assets/images/illustrations/ill-hero.png"
+            alt="Illustration of a wall mounted light fixture"
+            srcset="/assets/images/illustrations/ill-hero@2x.png 2x">
+
+      </picture>
   </div>
 
     <div class="overview-text">
-        <p class="tile-title">Illustrations</p>
+        <p class="section-title project-title">Illustrations</p>
         <p>
           Simple drawings can instantly explain a complex topic. They can provide energy and personality to interfaces.
         </p>
@@ -55,4 +64,4 @@ title: '| Illustrations'
 </div> <!-- / container -->
 {% include explore-more.html %}
 </div>
-{% include common-header.html %}
+{% include common-footer.html %}
