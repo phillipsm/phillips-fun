@@ -12,7 +12,8 @@
       "overview-img overview-img overview-img overview-img overview-img"
       "overview-text overview-text overview-text . ."
       "garbagio garbagio garbagio climbing climbing"
-      "ktr ktr ktr double-digit double-digit-partner";
+      "screwdrivers screwdrivers screwdrivers double-digit double-digit-partner"
+      "ktr ktr ktr wheelbarrow wheelbarrow";
     }
 
     .overview-img {
@@ -48,6 +49,14 @@
       grid-area: double-digit-partner;
     }
 
+    .wheelbarrow {
+      grid-area: wheelbarrow;
+    }
+
+    .screwdrivers {
+      grid-area: screwdrivers;
+    }
+
     @media only screen and (max-width: 900px) {
 
         .container {
@@ -60,7 +69,9 @@
             "climbing climbing"
             "ktr ktr"
             "garbagio garbagio"
-            "double-digit double-digit-partner";
+            "double-digit double-digit-partner"
+            "wheelbarrow wheelbarrow"
+            "screwdrivers screwdrivers";
 
         }
 
