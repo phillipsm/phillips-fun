@@ -263,68 +263,6 @@
 
 
 
-    @media only screen and (max-width: 900px) {
-
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 1em;
-            grid-row-gap: 1em;
-            grid-template-areas:
-            "overview-img overview-img"
-            "overview-head overview-head"
-            "overview-text overview-text"
-            "context-head context-head"
-            "context-text context-text"
-            "context-img context-img"
-            "problem-head problem-head"
-            "problem-text problem-text"
-            "problem-img problem-img"
-            "solution-head solution-head"
-            "solution-text solution-text"
-            "solution-img solution-img"
-            "process-head process-head"
-            "process-text process-text"
-            "process-overview-img process-overview-img"
-            "process-one-text process-one-text"
-            "process-one-img process-one-img"
-            "process-two-text process-two-text"
-            "process-two-img process-two-img"
-            "process-three-text process-three-text"
-            "process-three-img-a process-three-img-a"
-            "process-three-img-b process-three-img-b"
-            "process-four-text process-four-text"
-            "process-four-img-a process-four-img-a"
-            "process-four-img-b process-four-img-b"
-            "process-five-text process-five-text"
-            "process-five-img process-five-img"
-            "post-process-head post-process-head"
-            "post-process-text post-process-text"
-            "process-complete-img process-complete-img"
-            "role-head role-head"
-            "role-text role-text";
-        }
-
-        .overview-img {
-          margin-bottom: 4rem;
-        }
-
-        .title {
-          margin-bottom: 0;
-        }
-
-        .tile {
-          margin-top: 3rem;
-        }
-
-        .close-prox {
-          margin-top: 0;
-        }
-
-        .process-title {
-          margin-top: 4rem;
-          font-size: 1.2em;
-        }
-    }
 
 
 
@@ -363,24 +301,95 @@
 
 
 
+
+
+
+
+
+
+
+
     @media only screen and (max-width: 900px) {
 
-      .explore-more-container {
-        max-width: 1100px;
-        display: grid;
-        margin: 6rem auto 0 auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-        grid-template-areas:
-        "title-container"
-        "perma-tile"
-        "algo-tile"
-        "illustration-tile";
-      }
+        .container {
+          display: grid;
+          grid-column-gap: 2em;
+          grid-row-gap: 6em;
+          background-color: #fff;
+          margin: 0 auto;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-areas:
+          "overview-img overview-img overview-img overview-img overview-img"
+          "overview-text overview-text overview-text . ."
+          "context-head context-text context-text context-img context-img"
+          "problem-head problem-img problem-img problem-text problem-text"
+          "solution-head solution-text solution-text solution-text ."
+          ". . solution-img solution-img solution-img"
+          "process-head process-text process-text process-overview-img process-overview-img"
+          ". process-one-text process-one-text process-one-text ."
+          ". . process-one-img process-one-img process-one-img"
+          ". process-one-img-b process-one-img-b process-one-img-c process-one-img-c"
+          ". process-two-text process-two-text process-two-text ."
+          ". process-two-img-a process-two-img-a process-two-img-b process-two-img-b"
+          ". process-three-text process-three-text process-three-text ."
+          ". process-three-img-a process-three-img-a process-three-img-a process-three-img-a"
+          ". process-three-img-b process-three-img-b process-three-img-b process-three-img-b"
+          ". process-four-text process-four-text process-four-text ."
+          ". process-four-img-a process-four-img-a process-four-img-a process-four-img-a "
+          ". process-four-img-b process-four-img-b process-four-img-c process-four-img-c"
+          ". . process-four-img-d process-four-img-d process-four-img-d"
+          ". process-five-text process-five-text process-five-text ."
+          ". process-five-img-a process-five-img-a process-five-img-b process-five-img-b"
+          ". process-five-img-c process-five-img-c process-five-img-c process-five-img-c"
+          ". process-five-img-d process-five-img-d process-five-img-d process-five-img-d"
+          "post-process-head post-process-text post-process-text . ."
+          ". .  process-complete-img process-complete-img process-complete-img"
+          "role-head role-text role-text role-text ."
+          "tools-head tools-text tools-text tools-text .";
+        }
+
+
+
+        .overview-img {
+          margin-bottom: 4rem;
+        }
+
+        .title {
+          margin-bottom: 0;
+        }
+
+        .tile {
+          margin-top: 3rem;
+        }
+
+        .close-prox {
+          margin-top: 0;
+        }
+
+        .process-title {
+          margin-top: 4rem;
+          font-size: 1.2em;
+        }
+
+
+
+
+
+
+
+        .explore-more-container {
+          display: grid;
+          margin: 6rem auto 0 auto;
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 1em;
+          grid-row-gap: 1em;
+          grid-template-areas:
+          "title-container"
+          "perma-tile"
+          "algo-tile"
+          "illustration-tile";
+        }
+
 
     }
-
-
-
 } // end scope wrapper
